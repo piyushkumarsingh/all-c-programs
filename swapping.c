@@ -1,22 +1,17 @@
-#include<stdio.h>
-#include<conio.h>
-main()
-{
-	int x,y;
-	x=10;
-	y=20;
-	printf(" %d \t %d ", x , y);
-	swap(&x,&y);
-	printf(" \n values after swap \n");
-	printf(" %d \t %d ", x , y);
-	getch();
-	return 0;
-}
-
-void swap(int *a,int *b)
-{
-	int c;
-	c=*a;
-	*a=*b;
-	*b=c;
-}
+#include <stdio.h> 
+  
+int main() 
+{ 
+    int x, y; 
+    printf("Enter Value of x "); 
+    scanf("%d", &x); 
+    printf("\nEnter Value of y "); 
+    scanf("%d", &y); 
+  
+    int temp = x; 
+    x = y; 
+    y = temp; 
+  
+    printf("\nAfter Swapping: x = %d, y = %d", x, y); 
+    return 0; 
+} 
