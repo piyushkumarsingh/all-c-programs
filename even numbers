@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main(void)
+{
+	int max,i;
+	
+	printf("Enter max range: ");
+	scanf("%d",& max);
+	
+	printf("Even numbers are:\n");
+	for(i=1; i<=max; i++)
+	{
+		if(i%2==0)
+		printf("%d\n",i);
+	}
+}
